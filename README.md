@@ -28,13 +28,13 @@ In this project, I handled different data granularities (Monthly and Quarterly) 
 
 ## Dashboards Preview
 ### 1. Top 10 Economies
-![Top 10 Economies](Dashboard_Tableau/top10_economies.png)
+![Top 10 Economies](dashboards/top10_economies2024.png)
 
 ### 2. European Economic Map
-![All Countries](All%20Countries.png)
+![All Countries](dashboards/all_countries2024.png)
 
 ### 3. 2024 Economic Outlook
-![Top 5 Economies](Top%205%20Economies%202024.png)
+![Top 5 Economies](dashboards/top5_economies2024.png)
 
 ## Contact
 Created by [Mykyta Loiko]. 
