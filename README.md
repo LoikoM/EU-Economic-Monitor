@@ -36,6 +36,7 @@ In this project, I handled different data granularities (Monthly and Quarterly) 
 ### 3. 2024 Economic Outlook
 ![Top 5 Economies](dashboards/top5_economies2024.png)
 
+
 ## Contact
 Created by [Mykyta Loiko]. 
 Connect with me on [(https://www.linkedin.com/in/mykyta-loiko-9a9ab813a/)].
