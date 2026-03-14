@@ -28,7 +28,7 @@ In this project, I handled different data granularities (Monthly and Quarterly) 
 
 ## Dashboards Preview
 ### 1. Top 10 Economies
-![Top 10 Economies](top10_economies.png)
+![Top 10 Economies](Dashboard_Tableau/top10_economies.png)
 
 ### 2. European Economic Map
 ![All Countries](All%20Countries.png)
