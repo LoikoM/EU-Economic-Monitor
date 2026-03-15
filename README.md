@@ -24,7 +24,7 @@ In this project, I handled different data granularities (Monthly and Quarterly) 
 3. **Data Cleaning:** Filtered specific demographic categories (e.g., Age 25-74) to ensure data consistency.
 
 ## Visualizations
-### [ Live Dashboard Link](https://public.tableau.com/app/profile/mykyta.loiko/viz/EUsTop5Economies-GrowthandInflationDynamics2025/Dashboard_1?publish=yes)
+### [Live Dashboard Link](https://public.tableau.com/app/profile/mykyta.loiko/viz/EUsTop5Economies-GrowthandInflationDynamics2025/Dashboard_1?publish=yes)
 
 ## Dashboards Preview
 ### 1. Top 10 Economies
@@ -39,4 +39,4 @@ In this project, I handled different data granularities (Monthly and Quarterly) 
 
 ## Contact
 Created by [Mykyta Loiko]. 
-Connect with me on [(https://www.linkedin.com/in/mykyta-loiko-9a9ab813a/)].
+Connect with me on [LinkedIn Profile](https://www.linkedin.com/in/mykyta-loiko-9a9ab813a/)
