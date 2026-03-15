@@ -39,4 +39,5 @@ In this project, I handled different data granularities (Monthly and Quarterly) 
 
 ## Contact
 Created by Mykyta Loiko 
+
 Connect with me on [LinkedIn Profile](https://www.linkedin.com/in/mykyta-loiko-9a9ab813a/)
