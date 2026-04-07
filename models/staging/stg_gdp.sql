@@ -1,7 +1,7 @@
 WITH raw AS (
     SELECT json_content
     from {{ source('eurostat_raw', 'EUROSTAT_RAW') }}
-    WHERE dataset_name = 'unemployment'
+    WHERE dataset_name = 'gdp'
 ),
 
 geo_flat AS (
