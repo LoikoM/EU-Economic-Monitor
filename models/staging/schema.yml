@@ -1,14 +1,5 @@
 version: 2
 
-sources:
-  - name: eurostat_raw
-    database: EU_MONITOR
-    schema: RAW
-    description: "Raw JSON data ingested from Eurostat API"
-    tables:
-      - name: EUROSTAT_RAW
-        description: "Single table containing all 4 datasets as VARIANT JSON"
-
 models:
   - name: stg_hicp
     description: "Staging model for HICP inflation data. Parses raw JSON from Eurostat into tabular format."
