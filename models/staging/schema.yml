@@ -1,0 +1,91 @@
+version: 2
+
+sources:
+  - name: eurostat_raw
+    database: EU_MONITOR
+    schema: RAW
+    description: "Raw JSON data ingested from Eurostat API"
+    tables:
+      - name: EUROSTAT_RAW
+        description: "Single table containing all 4 datasets as VARIANT JSON"
+
+models:
+  - name: stg_hicp
+    description: "Staging model for HICP inflation data. Parses raw JSON from Eurostat into tabular format."
+    columns:
+      - name: country_code
+        description: "ISO 2-letter country code (e.g. IT, DE, FR)"
+        tests:
+          - not_null
+      - name: country_name
+        description: "Full country name extracted from Eurostat JSON labels"
+        tests:
+          - not_null
+      - name: time_period
+        description: "Monthly time period in YYYY-MM format"
+        tests:
+          - not_null
+      - name: obs_value
+        description: "Inflation rate (HICP) - annual rate of change"
+        tests:
+          - not_null
+
+  - name: stg_gdp
+    description: "Staging model for GDP data. Parses raw JSON from Eurostat into tabular format."
+    columns:
+      - name: country_code
+        description: "ISO 2-letter country code"
+        tests:
+          - not_null
+      - name: country_name
+        description: "Full country name"
+        tests:
+          - not_null
+      - name: time_period
+        description: "Quarterly time period in YYYY-QN format"
+        tests:
+          - not_null
+      - name: obs_value
+        description: "GDP value in millions of euros at 2020 chain-linked prices"
+        tests:
+          - not_null
+
+  - name: stg_unemployment
+    description: "Staging model for unemployment data. Parses raw JSON from Eurostat."
+    columns:
+      - name: country_code
+        description: "ISO 2-letter country code"
+        tests:
+          - not_null
+      - name: country_name
+        description: "Full country name"
+        tests:
+          - not_null
+      - name: time_period
+        description: "Monthly time period in YYYY-MM format"
+        tests:
+          - not_null
+      - name: obs_value
+        description: "Unemployment rate as % of active population"
+        tests:
+          - not_null
+
+  - name: stg_hpi
+    description: "Staging model for House Price Index data. Parses raw JSON from Eurostat."
+    columns:
+      - name: country_code
+        description: "ISO 2-letter country code"
+        tests:
+          - not_null
+      - name: country_name
+        description: "Full country name"
+        tests:
+          - not_null
+      - name: time_period
+        description: "Quarterly time period in YYYY-QN format"
+        tests:
+          - not_null
+      - name: obs_value
+        description: "House Price Index value (base year 2015 = 100)"
+        tests:
+          - not_null

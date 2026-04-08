@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: eurostat_raw
+    database: EU_MONITOR
+    schema: RAW
+    tables:
+      - name: EUROSTAT_RAW
+        description: "Raw JSON data ingested via Python from Eurostat API"
