@@ -36,6 +36,20 @@ All data sourced from **Eurostat API**:
 
 ## Project Structure
 
+```
+├── ingestion/
+│   └── eurostat_pipeline.py  # Python script: API → Snowflake RAW
+├── models/
+│   ├── staging/              # JSON parsing, raw → tabular
+│   │   ├── stg_gdp.sql
+│   │   ├── stg_hicp.sql
+│   │   └── src_eurostat.yml
+│   └── mart/                 # Business logic, YoY calculations
+│       ├── mart_gdp.sql
+│       └── mart_hicp.sql
+├── dashboards/               # Screenshots and Tableau exports
+└── README.md
+```
 ## dbt Methodology
 **Staging layer** — parses raw Eurostat JSON (VARIANT) into clean tabular 
 format using `LATERAL FLATTEN` and Snowflake semi-structured data functions.
