@@ -3,7 +3,10 @@ version: 2
 models:
   - name: stg_hicp
     columns:
-      - name: country_code
+      - name: country_name
+        tests:
+          - not_null
+      - name: time_period
         tests:
           - not_null
       - name: obs_value
@@ -12,7 +15,34 @@ models:
 
   - name: stg_gdp
     columns:
-      - name: country_code
+      - name: country_name
+        tests:
+          - not_null
+      - name: time_period
+        tests:
+          - not_null
+      - name: obs_value
+        tests:
+          - not_null
+
+  - name: stg_unemployment
+    columns:
+      - name: country_name
+        tests:
+          - not_null
+      - name: time_period
+        tests:
+          - not_null
+      - name: obs_value
+        tests:
+          - not_null
+
+  - name: stg_hpi
+    columns:
+      - name: country_name
+        tests:
+          - not_null
+      - name: time_period
         tests:
           - not_null
       - name: obs_value
