@@ -19,6 +19,12 @@ ingestion to transformed data models ready for visualization.
 | Visualization | Tableau Public |
 | Version Control | GitHub |
 
+### Data Lineage
+![dbt Lineage Graph](docs/lineage_graph.png)
+
+### Data Preview
+![Mart Unemployment Preview](docs/mart_unemployment_preview.png)
+
 ## Data Sources
 All data sourced from **Eurostat API**:
 | Dataset | Code | Granularity |
